@@ -36,7 +36,7 @@ public class CommandLineController implements  InterfaceReactions {
                 showMessages(PLEASE_ENTER_STRING);
 
                 inputString = new BufferedReader(new InputStreamReader(System.in)).readLine();
-                calculatorInterface.makeCalculations(inputString);
+
 
 
             }
@@ -53,7 +53,9 @@ public class CommandLineController implements  InterfaceReactions {
         }
         else
         {
-        readInputString();}
+
+        calculatorInterface.makeCalculations(inputString);
+        }
 
 
 
@@ -70,7 +72,7 @@ public class CommandLineController implements  InterfaceReactions {
         } catch (IOException exception) {
             exception.printStackTrace();
         }
-        System.out.println("exit");
+       // System.out.println("exit");
         System.exit(0);
     }
 
