@@ -9,11 +9,11 @@ public class SimpleSeparatedStringPreparator {
     private String data;
     public TypeOfString typeOfInputString;
     //регулярное выражение, проверяющее есть ли в строке один и только из символов +/-/*//
-    private String actionRegex="[+\\-*/]{1}";
+    private final String actionRegex="[+\\-*/]{1}";
     //регулярное выражение, проверяющее есть ли в строке один или более символов i/v/x
-    private String romanNumberRegex="[ivx]+";
+    private final String romanNumberRegex="[ivx]+";
     //регулярное выражение проверяющее есть ли в строке арабские цифры
-    private String arabicNumberRegex="[1-9][0-9]*";
+    private final String arabicNumberRegex="[1-9][0-9]*";
 
     public static SimpleSeparatedStringPreparator createNewInstance(String data) {
         SimpleSeparatedStringPreparator newInstance=new SimpleSeparatedStringPreparator();
@@ -26,8 +26,8 @@ public class SimpleSeparatedStringPreparator {
         String[] numbers=data.split(actionRegex);
         int actionPos=numbers[0].length();
         String action=data.substring(actionPos,actionPos+1);
-        SeparatedString separatedString=SeparatedString.getInstance(numbers[0],numbers[1],action,typeOfInputString);
-        return separatedString;
+
+        return SeparatedString.getInstance(numbers[0],numbers[1],action,typeOfInputString);
     }
 
 
