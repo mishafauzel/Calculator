@@ -26,7 +26,7 @@ public class SimpleStringCalculator {
         catch (Exception ex)
         {
             //System.out.println(ex.getMessage());
-            dataState.putData(DataState.error(ex.getMessage()));
+            dataState.putData(DataState.error(ex.getLocalizedMessage()));
             return;
         }
 
