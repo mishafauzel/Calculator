@@ -13,7 +13,7 @@ public class SimpleSeparatedStringPreparator {
     //регулярное выражение, проверяющее есть ли в строке один или более символов i/v/x
     private String romanNumberRegex="[ivx]+";
     //регулярное выражение проверяющее есть ли в строке арабские цифры
-    private String arabicNumberRegex="[1-9]*";
+    private String arabicNumberRegex="[1-9][0-9]*1";
 
     public static SimpleSeparatedStringPreparator createNewInstance(String data) {
         SimpleSeparatedStringPreparator newInstance=new SimpleSeparatedStringPreparator();
