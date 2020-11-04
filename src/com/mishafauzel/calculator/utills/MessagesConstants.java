@@ -10,7 +10,7 @@ public class MessagesConstants {
     public static final String UNCKNOWN_ACTION="В выражении есть неизвестные действия";
 
     public static final String HELLO_STRING="Привет, это тестовая программа для прохождения конкурса на java mentor";
-    public static final String PLEASE_ENTER_STRING="Введите строку следующего формата чило1/действие/число2, для получения результата нажмите Enter, поддерживаются как римские так и арабские цифры, после ввода строки, нажмите enter,для выхода из приложения введите q и нажмите enter";
+    public static final String PLEASE_ENTER_STRING="Введите строку следующего формата чило1/действие/число2, числа от 1 до 10, для получения результата нажмите Enter, поддерживаются как римские так и арабские цифры, после ввода строки, нажмите enter,для выхода из приложения введите q и нажмите enter";
     public static final String BYE = "До свидания!";
     public static final String ANSWER="Ответ: ";
     public static final String ERROR="Ошибка: ";

@@ -43,8 +43,6 @@ public class NumberConverter {
         String romanNumeral = roman.toUpperCase();
         int result = 0;
 
-
-
         int i = 0;
 
         while ((romanNumeral.length() > 0) && (i < romansNumbers.length)) {
